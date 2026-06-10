@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="K.C. Craft — India's premier jewellery manufacturer specializing in ultra-lightweight jewellery. Gold and silver chains, necklaces, bangles, rings and more."/>
+<meta name="keywords" content="jewellery manufacturer India, B2B jewellery, lightweight jewellery, gold chains manufacturer, silver jewellery, Mumbai jewellery manufacturer, wholesale jewellery"/>
+<meta property="og:title" content="K.C. Craft – Fine Jewellery Manufacturer, Mumbai"/>
+<meta property="og:description" content="India's premier jewellery manufacturer specializing in ultra-lightweight jewellery. Supplying retailers and wholesalers worldwide."/>
+<title>K.C. Craft – Fine Jewellery Manufacturer | Mumbai</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --gold:#C9A84C;--gold-light:#E8D5A0;--gold-dark:#8B6914;
+  --cream:#FAF8F4;--off-white:#F5F1EA;--charcoal:#1A1714;
+  --text:#2C2820;--muted:#7A7168;--border:#E0D9CC;
+  --white:#FFFFFF;--black:#0F0D0B;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+
+/* ── NAV ── */
+#nav{position:fixed;top:0;width:100%;z-index:1000;transition:all .4s ease;padding:0 5%;background:transparent}
+#nav.scrolled{background:rgba(15,13,11,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,.2)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--gold);letter-spacing:3px;text-transform:uppercase;cursor:pointer;text-decoration:none;line-height:1}
+.nav-logo span{color:var(--white)}
+.nav-logo small{display:block;font-size:8px;letter-spacing:3px;color:rgba(201,168,76,.6);font-weight:300;margin-top:2px;font-family:'Jost',sans-serif}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.82);font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:color .3s;cursor:pointer}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--black);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:10px 22px;border:none;cursor:pointer;font-family:'Jost',sans-serif;font-weight:500;transition:all .3s}
+.nav-cta:hover{background:var(--gold-light)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:1.5px;background:var(--gold);display:block;transition:all .3s}
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}}
+
+#mobile-menu{display:none;position:fixed;top:72px;left:0;width:100%;background:rgba(15,13,11,.97);padding:20px 5%;z-index:999;border-top:1px solid rgba(201,168,76,.2)}
+#mobile-menu.open{display:block}
+#mobile-menu a{display:block;color:rgba(255,255,255,.82);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06);cursor:pointer}
+#mobile-menu a:hover{color:var(--gold)}
+
+/* ── HERO ── */
+#hero{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;overflow:hidden;background:var(--black)}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 60% 50%,#2A1F08 0%,#0F0D0B 65%)}
+.hero-particles{position:absolute;inset:0;overflow:hidden}
+.particle{position:absolute;width:2px;height:2px;background:var(--gold);border-radius:50%;opacity:0;animation:float linear infinite}
+@keyframes float{0%{opacity:0;transform:translateY(0) scale(0)}20%{opacity:.5}80%{opacity:.2}100%{opacity:0;transform:translateY(-120vh) scale(1.5)}}
+.hero-content{position:relative;z-index:2;padding:0 8%;max-width:680px}
+.hero-est{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:rgba(201,168,76,.7);margin-bottom:14px;display:flex;align-items:center;gap:14px}
+.hero-est::before{content:'';width:32px;height:1px;background:rgba(201,168,76,.5)}
+.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,80px);line-height:1.07;color:var(--white);font-weight:300;margin-bottom:18px}
+.hero-h1 em{font-style:italic;color:var(--gold);display:block}
+.hero-sub{font-size:14px;color:rgba(255,255,255,.52);line-height:1.85;max-width:440px;margin-bottom:40px;font-weight:300}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-gold{background:var(--gold);color:var(--black);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;padding:14px 32px;border:none;cursor:pointer;font-weight:500;transition:all .35s}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--white);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;padding:13px 32px;border:1px solid rgba(255,255,255,.28);cursor:pointer;font-weight:400;transition:all .35s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+
+/* Hero image grid */
+.hero-visuals{position:absolute;right:0;top:0;bottom:0;width:42%;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:3px;overflow:hidden}
+.hero-img-cell{position:relative;overflow:hidden;background:rgba(255,255,255,.04)}
+.hero-img-cell:first-child{grid-row:span 2}
+.img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.03));border:1px solid rgba(201,168,76,.1);position:relative;overflow:hidden}
+.img-placeholder::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(201,168,76,.04))}
+.img-placeholder img{width:100%;height:100%;object-fit:cover;display:block}
+.img-num{font-family:'Cormorant Garamond',serif;font-size:28px;color:rgba(201,168,76,.25);font-weight:300;line-height:1}
+.img-label{font-size:8px;letter-spacing:2px;text-transform:uppercase;color:rgba(201,168,76,.35);text-align:center;padding:0 12px;line-height:1.5}
+.hero-scroll{position:absolute;bottom:28px;left:8%;display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.28);font-size:9px;letter-spacing:2px;text-transform:uppercase}
+.scroll-line{width:44px;height:1px;background:linear-gradient(to right,rgba(201,168,76,.5),transparent)}
+@media(max-width:900px){.hero-visuals{width:35%}}
+@media(max-width:650px){.hero-visuals{display:none}.hero-content{max-width:100%}}
+
+/* ── ABOUT ── */
+#about{background:var(--cream);padding:80px 8%}
+.about-inner{max-width:1300px;margin:0 auto}
+.about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:center}
+.about-img-wrap{position:relative}
+.about-main-img{width:100%;aspect-ratio:4/5;overflow:hidden;position:relative}
+.about-main-img .img-placeholder{aspect-ratio:4/5;height:100%}
+.about-badge{position:absolute;bottom:-16px;right:-16px;background:var(--gold);color:var(--black);padding:20px 22px;text-align:center;z-index:2}
+.about-badge-main{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;line-height:1.4}
+.about-badge-sub{font-size:8px;letter-spacing:2px;text-transform:uppercase;margin-top:4px;opacity:.8}
+.section-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:14px}
+.section-eyebrow::before{content:'';width:28px;height:1px;background:var(--gold)}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.8vw,48px);font-weight:300;color:var(--charcoal);line-height:1.15;margin-bottom:24px}
+.about-text p{font-size:14px;line-height:1.9;color:var(--muted);margin-bottom:16px;font-weight:300}
+.about-pillars{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.pillar{padding:16px 18px;border:1px solid var(--border);background:var(--white)}
+.pillar-icon{font-size:18px;margin-bottom:8px}
+.pillar h4{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--charcoal);margin-bottom:5px;font-weight:500}
+.pillar p{font-size:12px;color:var(--muted);line-height:1.7;font-weight:300}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}.about-main-img{aspect-ratio:16/9}}
+
+/* ── PRODUCTS ── */
+#products{background:var(--white);padding:80px 8%}
+.products-inner{max-width:1300px;margin:0 auto}
+.products-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:16px}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.product-card{position:relative;overflow:hidden;cursor:pointer;background:var(--off-white)}
+.product-card:nth-child(1){grid-column:span 2}
+.product-img{width:100%;aspect-ratio:4/3;overflow:hidden;position:relative}
+.product-card:nth-child(1) .product-img{aspect-ratio:16/7}
+.product-img .img-placeholder{height:100%}
+.product-img .img-placeholder::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.75) 0%,transparent 55%);z-index:1}
+.product-info{position:absolute;bottom:0;left:0;right:0;padding:20px 22px;z-index:2}
+.product-name{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--white);font-weight:300}
+.product-tag{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:4px}
+.product-hover{position:absolute;inset:0;background:rgba(201,168,76,.08);opacity:0;transition:opacity .3s;z-index:1;border:1px solid rgba(201,168,76,.2)}
+.product-card:hover .product-hover{opacity:1}
+.product-card:hover .product-img .img-placeholder{transform:scale(1.03);transition:transform .5s ease}
+@media(max-width:900px){.products-grid{grid-template-columns:repeat(2,1fr)}.product-card:nth-child(1){grid-column:span 2}}
+@media(max-width:560px){.products-grid{grid-template-columns:1fr}.product-card:nth-child(1){grid-column:span 1}}
+
+/* ── WHY US ── */
+#why-us{background:var(--black);padding:80px 8%}
+.why-inner{max-width:1300px;margin:0 auto}
+#why-us .section-title{color:var(--white)}
+#why-us .section-eyebrow{color:var(--gold)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:48px;border:1px solid rgba(201,168,76,.1)}
+.why-item{padding:34px 28px;border:1px solid rgba(201,168,76,.06);transition:background .35s}
+.why-item:hover{background:rgba(201,168,76,.05)}
+.why-num{font-family:'Cormorant Garamond',serif;font-size:40px;color:rgba(201,168,76,.16);margin-bottom:12px;font-weight:300;line-height:1}
+.why-title{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500}
+.why-desc{font-size:13px;color:rgba(255,255,255,.4);line-height:1.8;font-weight:300}
+@media(max-width:800px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.why-grid{grid-template-columns:1fr}}
+
+/* ── GALLERY ── */
+#gallery{background:var(--off-white);padding:80px 8%}
+.gallery-inner{max-width:1300px;margin:0 auto}
+.gallery-filters{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.filter-btn{background:none;border:1px solid var(--border);color:var(--muted);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;cursor:pointer;transition:all .3s}
+.filter-btn.active,.filter-btn:hover{background:var(--gold);border-color:var(--gold);color:var(--black)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.gallery-item{position:relative;overflow:hidden;cursor:pointer;aspect-ratio:1;background:var(--off-white)}
+.gallery-item .img-placeholder{height:100%;transition:transform .5s ease}
+.gallery-item:hover .img-placeholder{transform:scale(1.07)}
+.gallery-overlay{position:absolute;inset:0;background:rgba(15,13,11,.5);opacity:0;transition:opacity .3s;display:flex;align-items:center;justify-content:center;color:white;font-size:22px;z-index:2}
+.gallery-item:hover .gallery-overlay{opacity:1}
+@media(max-width:800px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:500px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ── LIGHTBOX ── */
+#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.96);z-index:2000;align-items:center;justify-content:center}
+#lightbox.open{display:flex}
+.lb-inner{position:relative;max-width:90vw}
+.lb-close{position:absolute;top:-38px;right:0;color:rgba(255,255,255,.6);font-size:26px;cursor:pointer;background:none;border:none;transition:color .2s}
+.lb-close:hover{color:var(--gold)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);border:1px solid rgba(201,168,76,.3);color:var(--gold);font-size:20px;padding:10px 14px;cursor:pointer;transition:all .3s;z-index:1}
+.lb-nav:hover{background:rgba(201,168,76,.15)}
+.lb-prev{left:-52px}.lb-next{right:-52px}
+.lb-img{width:400px;height:400px;display:flex;align-items:center;justify-content:center}
+.lb-img .img-placeholder{width:100%;height:100%}
+.lb-cap{text-align:center;margin-top:12px;font-family:'Cormorant Garamond',serif;font-size:18px;color:rgba(255,255,255,.65)}
+
+/* ── TESTIMONIALS ── */
+#testimonials{background:var(--white);padding:80px 8%}
+.testi-inner{max-width:1300px;margin:0 auto}
+.testi-wrap{overflow:hidden;margin-top:48px}
+.testi-track{display:flex;transition:transform .7s cubic-bezier(.4,0,.2,1)}
+.testimonial{min-width:100%;padding:0 6%}
+.testi-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(17px,2.2vw,24px);font-weight:300;font-style:italic;color:var(--charcoal);line-height:1.8;margin-bottom:32px}
+.testi-quote::before{content:'\201C';font-size:72px;color:var(--gold);line-height:0;vertical-align:-.45em;margin-right:6px}
+.testi-author{display:flex;align-items:center;gap:14px}
+.author-av{width:46px;height:46px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--black);font-weight:600;flex-shrink:0}
+.author-name{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--charcoal);font-weight:500}
+.author-role{font-size:12px;color:var(--muted);font-weight:300;margin-top:2px}
+.testi-nav{display:flex;gap:8px;margin-top:36px}
+.testi-dot{width:22px;height:2px;background:var(--border);border:none;cursor:pointer;transition:all .3s;padding:0}
+.testi-dot.active{background:var(--gold);width:40px}
+
+/* ── CONTACT ── */
+#contact{background:var(--charcoal);padding:80px 8%}
+.contact-inner{max-width:1300px;margin:0 auto}
+#contact .section-title{color:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:72px;margin-top:48px}
+.contact-info h3{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);font-weight:300;margin-bottom:14px}
+.contact-info p{font-size:14px;color:rgba(255,255,255,.46);line-height:1.85;font-weight:300;margin-bottom:28px}
+.ci-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px}
+.ci-icon{width:34px;height:34px;border:1px solid rgba(201,168,76,.28);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold);font-size:14px;margin-top:2px}
+.ci-val{font-size:13px;color:rgba(255,255,255,.58);line-height:1.6}
+.ci-lbl{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:2px}
+.wa-btn{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:white;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:13px 24px;border:none;cursor:pointer;margin-top:20px;transition:all .3s;font-weight:500}
+.wa-btn:hover{background:#1da855;transform:translateY(-2px)}
+.form-group{margin-bottom:14px}
+.form-label{display:block;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:7px}
+.form-input,.form-textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--white);font-family:'Jost',sans-serif;font-size:13px;padding:13px 15px;outline:none;transition:border-color .3s;font-weight:300}
+.form-input:focus,.form-textarea:focus{border-color:var(--gold)}
+.form-input::placeholder,.form-textarea::placeholder{color:rgba(255,255,255,.22)}
+.form-textarea{resize:vertical;min-height:100px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.submit-btn{width:100%;background:var(--gold);color:var(--black);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:16px;border:none;cursor:pointer;font-weight:500;transition:all .35s;margin-top:4px}
+.submit-btn:hover{background:var(--gold-light);transform:translateY(-2px)}
+.form-note{font-size:10px;color:rgba(255,255,255,.25);margin-top:10px;letter-spacing:.5px}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+
+/* ── MAP / VISIT ── */
+#visit{background:var(--white);padding:80px 8%}
+.visit-inner{max-width:1300px;margin:0 auto}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:48px}
+.map-box{width:100%;height:360px;background:var(--off-white);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.map-grid-bg{position:absolute;inset:0;opacity:.07;background:repeating-linear-gradient(0deg,transparent,transparent 39px,var(--border) 39px,var(--border) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,var(--border) 39px,var(--border) 40px)}
+.map-content{position:relative;z-index:1;text-align:center}
+.ct-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:20px}
+.ct-icon{width:34px;height:34px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold);font-size:14px;margin-top:2px}
+.ct-lbl{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.ct-val{font-size:14px;color:var(--text)}
+.social-row{display:flex;gap:10px;margin-top:6px}
+.social-btn{width:36px;height:36px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;cursor:pointer;transition:all .3s;text-decoration:none}
+.social-btn:hover{border-color:var(--gold);color:var(--gold)}
+@media(max-width:900px){.visit-grid{grid-template-columns:1fr}}
+
+/* ── FOOTER ── */
+footer{background:var(--black);border-top:1px solid rgba(201,168,76,.14);padding:52px 8% 28px}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.footer-brand-name{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);letter-spacing:3px;font-weight:600}
+.footer-brand-name span{color:var(--white)}
+.footer-tagline{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(201,168,76,.45);margin-top:3px;margin-bottom:12px}
+.footer-desc{font-size:12px;color:rgba(255,255,255,.3);line-height:1.8;font-weight:300}
+.footer-col h5{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:500}
+.footer-col a{display:block;font-size:12px;color:rgba(255,255,255,.35);text-decoration:none;margin-bottom:9px;cursor:pointer;transition:color .3s;font-weight:300}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-bottom p{font-size:11px;color:rgba(255,255,255,.2)}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.footer-top{grid-template-columns:1fr}}
+
+/* ── ADMIN LOGIN ── */
+#admin-login{display:none;position:fixed;inset:0;z-index:4000;background:rgba(0,0,0,.97);align-items:center;justify-content:center}
+#admin-login.open{display:flex}
+.login-box{background:#141210;border:1px solid rgba(201,168,76,.22);padding:44px;width:340px;text-align:center}
+.login-box h2{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--white);font-weight:300;margin-bottom:6px}
+.login-box p{font-size:11px;color:rgba(255,255,255,.3);margin-bottom:28px;letter-spacing:1px}
+.login-input{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--white);font-family:'Jost',sans-serif;font-size:14px;padding:13px 15px;margin-bottom:10px;outline:none}
+.login-input:focus{border-color:var(--gold)}
+.login-err{font-size:11px;color:#e55;margin-bottom:10px;display:none}
+.login-hint{font-size:10px;color:rgba(255,255,255,.18);margin-top:14px}
+
+/* ── ADMIN PANEL ── */
+#admin-panel{display:none;position:fixed;inset:0;z-index:3000;background:#0F0D0B;overflow:hidden}
+#admin-panel.open{display:flex}
+.admin-sidebar{width:230px;flex-shrink:0;background:#141210;border-right:1px solid rgba(201,168,76,.1);display:flex;flex-direction:column;overflow-y:auto}
+.admin-logo-wrap{padding:22px 22px 20px}
+.admin-logo-wrap p{font-size:9px;color:rgba(255,255,255,.28);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px}
+.admin-nav a{display:flex;align-items:center;gap:11px;padding:12px 22px;color:rgba(255,255,255,.42);font-size:12px;cursor:pointer;transition:all .3s;border-left:2px solid transparent;text-decoration:none}
+.admin-nav a:hover,.admin-nav a.active{color:var(--gold);background:rgba(201,168,76,.05);border-left-color:var(--gold)}
+.admin-nav a span{font-size:15px}
+.admin-exit{margin:auto 22px 22px;background:none;border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.42);font-family:'Jost',sans-serif;font-size:11px;padding:9px 18px;cursor:pointer;letter-spacing:1px;transition:all .3s}
+.admin-exit:hover{color:var(--gold);border-color:var(--gold)}
+.admin-main{flex:1;overflow-y:auto;padding:32px}
+.admin-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+.admin-page-title{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--white);font-weight:300}
+.admin-sec{display:none}
+.admin-sec.active{display:block}
+.admin-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-bottom:28px}
+.admin-card{background:#1A1714;border:1px solid rgba(201,168,76,.1);padding:20px}
+.admin-card-num{font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold);font-weight:300}
+.admin-card-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:5px}
+.admin-box{background:#1A1714;border:1px solid rgba(201,168,76,.08);padding:20px;margin-bottom:14px}
+.admin-box-title{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+.atbl{width:100%;border-collapse:collapse;font-size:12px}
+.atbl th{text-align:left;padding:10px 14px;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);border-bottom:1px solid rgba(201,168,76,.08);font-weight:400}
+.atbl td{padding:12px 14px;color:rgba(255,255,255,.55);border-bottom:1px solid rgba(255,255,255,.03)}
+.atbl tr:hover td{background:rgba(201,168,76,.03);color:rgba(255,255,255,.8)}
+.badge{display:inline-block;padding:3px 9px;font-size:8px;letter-spacing:1px;text-transform:uppercase}
+.badge-new{background:rgba(201,168,76,.14);color:var(--gold)}
+.badge-read{background:rgba(255,255,255,.04);color:rgba(255,255,255,.3)}
+.abtn{background:var(--gold);color:var(--black);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border:none;cursor:pointer;font-weight:500;transition:all .3s}
+.abtn:hover{background:var(--gold-light)}
+.abtn-danger{background:rgba(220,53,69,.12);color:#dc3545;border:1px solid rgba(220,53,69,.18)}
+.upload-zone{border:1px dashed rgba(201,168,76,.28);padding:40px;text-align:center;cursor:pointer;transition:all .3s;margin-bottom:20px}
+.upload-zone:hover{border-color:var(--gold);background:rgba(201,168,76,.03)}
+.upload-zone p{color:rgba(255,255,255,.35);font-size:12px;font-weight:300}
+.upload-zone strong{color:var(--gold);display:block;font-size:14px;margin-bottom:6px}
+.ainput,.aselect{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);color:var(--white);font-family:'Jost',sans-serif;font-size:12px;padding:11px 13px;outline:none;margin-bottom:10px;transition:border-color .3s}
+.ainput:focus,.aselect:focus{border-color:var(--gold)}
+.aselect option{background:#1A1714}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:14px}
+.photo-thumb{position:relative;aspect-ratio:1;overflow:hidden;background:rgba(201,168,76,.08)}
+.photo-thumb-actions{position:absolute;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;gap:6px;opacity:0;transition:opacity .3s}
+.photo-thumb:hover .photo-thumb-actions{opacity:1}
+.chart-bars{display:flex;align-items:flex-end;gap:6px;height:120px;margin-top:14px}
+.cbar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px}
+.cbar{width:100%;background:linear-gradient(to top,var(--gold-dark),var(--gold));min-height:3px}
+.cbar-lbl{font-size:8px;color:rgba(255,255,255,.28);letter-spacing:1px}
+
+/* ── TOAST ── */
+#toast{position:fixed;bottom:28px;right:28px;z-index:5000;background:var(--gold);color:var(--black);padding:13px 22px;font-size:12px;letter-spacing:1px;font-weight:500;transform:translateY(70px);opacity:0;transition:all .4s;pointer-events:none;max-width:320px}
+#toast.show{transform:translateY(0);opacity:1}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero">K.C.<span> Craft</span><small>Fine Jewellery Chains · Est. 2006</small></a>
+    <ul class="nav-links">
+      <li><a onclick="goTo('about')">About</a></li>
+      <li><a onclick="goTo('products')">Products</a></li>
+      <li><a onclick="goTo('gallery')">Gallery</a></li>
+      <li><a onclick="goTo('testimonials')">Clients</a></li>
+      <li><a onclick="goTo('contact')">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="goTo('contact')">Contact Us</button>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a onclick="goTo('about')">About</a>
+  <a onclick="goTo('products')">Products</a>
+  <a onclick="goTo('gallery')">Gallery</a>
+  <a onclick="goTo('testimonials')">Clients</a>
+  <a onclick="goTo('contact')">Contact Us</a>
+  <a onclick="openAdminLogin()">Admin Panel</a>
+</div>
+
+<!-- HERO -->
+<div id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-est">Est. 2006 · Mumbai, India</div>
+    <h1 class="hero-h1">Affordable<br><em>Everyday Jewellery</em></h1>
+    <p class="hero-sub">India's premier jewellery manufacturer specializing in ultra-lightweight jewellery. Precision-engineered gold and silver pieces for retailers and wholesalers worldwide.</p>
+    <div class="hero-btns">
+      <button class="btn-gold" onclick="goTo('contact')">Contact Us</button>
+      <button class="btn-outline" onclick="goTo('products')">View Products</button>
+    </div>
+  </div>
+  <!-- Hero image grid -->
+  <div class="hero-visuals">
+    <div class="hero-img-cell">
+      <div class="img-placeholder" id="hero-img-1">
+        <div class="img-num">1</div>
+        <div class="img-label">Premium Necklace Collection</div>
+      </div>
+    </div>
+    <div class="hero-img-cell">
+      <div class="img-placeholder" id="hero-img-2">
+        <div class="img-num">2</div>
+        <div class="img-label">Designer Kada Collection</div>
+      </div>
+    </div>
+    <div class="hero-img-cell">
+      <div class="img-placeholder" id="hero-img-3">
+        <div class="img-num">3</div>
+        <div class="img-label">Elegant Bracelet Collection</div>
+      </div>
+    </div>
+    <div class="hero-img-cell">
+      <div class="img-placeholder" id="hero-img-4">
+        <div class="img-num">4</div>
+        <div class="img-label">Lightweight Chain Collection</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Explore</span></div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" style="background:var(--cream);padding:80px 8%">
+  <div class="about-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-main-img">
+          <div class="img-placeholder" id="about-img" style="aspect-ratio:4/5;height:auto;min-height:360px">
+            <div class="img-num">5</div>
+            <div class="img-label">Fine Ring Collection</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-main">GJC<br>Member</div>
+          <div class="about-badge-sub">Life + Platinium</div>
+        </div>
+      </div>
+      <div class="reveal d1">
+        <div class="section-eyebrow">Our Story</div>
+        <h2 class="section-title">Crafted with<br>Engineering.</h2>
+        <div class="about-text">
+          <p>K.C. Craft was established in 2006 in Mumbai by Sanjeev K. Jain (B.E. Mech), bringing an engineering mindset to fine jewellery manufacturing. Our mechanical expertise enables us to produce ultra-lightweight jewellery with exceptional precision and finish.</p>
+          <p>We specialize exclusively in fine jewellery chains and lightweight pieces — gold and silver — serving retailers, wholesalers, and exporters across India and internationally. Every piece reflects our commitment to engineering excellence and contemporary design.</p>
+          <p>As proud GJC Life Members and Platinium Members, and exhibitors at IIJS for the last 20 years, K.C. Craft is a name trusted by jewellery businesses worldwide.</p>
+        </div>
+        <div class="about-pillars">
+          <div class="pillar"><div class="pillar-icon">⬡</div><h4>BIS Hallmarked</h4><p>All gold jewellery BIS certified for guaranteed purity.</p></div>
+          <div class="pillar"><div class="pillar-icon">◎</div><h4>Ultra-Lightweight</h4><p>Engineering-driven designs that minimize weight without compromising elegance.</p></div>
+          <div class="pillar"><div class="pillar-icon">◈</div><h4>925 Silver</h4><p>Certified sterling silver with purity guaranteed on every piece.</p></div>
+          <div class="pillar"><div class="pillar-icon">⬦</div><h4>Export Ready</h4><p>GSTIN, IEC, and full export documentation for global orders.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div id="products" style="background:var(--white);padding:80px 8%">
+  <div class="products-inner">
+    <div class="products-header reveal">
+      <div>
+        <div class="section-eyebrow">What We Make</div>
+        <h2 class="section-title" style="margin-bottom:0">Our Products</h2>
+      </div>
+      <p style="font-size:13px;color:var(--muted);max-width:320px;text-align:right;font-weight:300;line-height:1.7">Ultra-lightweight precision jewellery crafted for retailers, wholesalers and exporters worldwide.</p>
+    </div>
+    <div class="products-grid reveal d1">
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-1">
+            <div class="img-num">1</div>
+            <div class="img-label">Premium Necklace Collection</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Necklaces</div><div class="product-tag">Ultra-lightweight · Gold & Silver · Contemporary Designs</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-2">
+            <div class="img-num">2</div>
+            <div class="img-label">Designer Kada Collection</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Kadas</div><div class="product-tag">Precision Engineered · Bold Designs</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-3">
+            <div class="img-num">3</div>
+            <div class="img-label">Elegant Bracelet Collection</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Bracelets</div><div class="product-tag">Lightweight · Fine Finish · Everyday Wear</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-4">
+            <div class="img-num">4</div>
+            <div class="img-label">Lightweight Chain Collection</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Chains</div><div class="product-tag">Figaro · Franco · Rope · Box · Singapore</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-5" style="background:linear-gradient(135deg,rgba(201,168,76,.06),rgba(201,168,76,.02))">
+            <div class="img-num">5</div>
+            <div class="img-label">Fine Ring Collection</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Gents Rings</div><div class="product-tag">Bold · Precision-set · Gold & Silver</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-6">
+            <div class="img-num">6</div>
+            <div class="img-label">Fine Ring Collection</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Ladies Rings</div><div class="product-tag">Delicate · Lightweight · Contemporary</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-7">
+            <div class="img-num">6</div>
+            <div class="img-label">Traditional & Modern Bangles</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Bangles</div><div class="product-tag">Traditional & Modern · Ultra-lightweight</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-8">
+            <div class="img-num">7</div>
+            <div class="img-label">Stylish Tops Collection</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Tops</div><div class="product-tag">Stylish · Everyday · Fine Finish</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" id="prod-img-9">
+            <div class="img-num">8</div>
+            <div class="img-label">Elegant Bali Collection</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.78) 0%,transparent 55%);z-index:1"></div>
+        </div>
+        <div class="product-info"><div class="product-name">Bali</div><div class="product-tag">Elegant · Lightweight · Classic & Modern</div></div>
+        <div class="product-hover"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<div id="why-us" style="background:var(--black);padding:80px 8%">
+  <div class="why-inner">
+    <div class="reveal">
+      <div class="section-eyebrow" style="color:var(--gold)">Why K.C. Craft</div>
+      <h2 class="section-title" style="color:var(--white)">Manufacturing<br>Without Compromise</h2>
+    </div>
+    <div class="why-grid reveal d1">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <div class="why-title">Chain Specialists</div>
+        <div class="why-desc">Exclusively fine jewellery chain and lightweight piece manufacturers — giving us unmatched depth of expertise in every design and finish.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <div class="why-title">Engineering Expertise</div>
+        <div class="why-desc">Engineering expertise in metal forming and finishing — led by Sanjeev K. Jain, B.E. Mech — ensures precision and consistency across every batch.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <div class="why-title">Ultra-Lightweight Design</div>
+        <div class="why-desc">Our signature engineering-driven approach produces pieces that are lighter than market standard without sacrificing strength or elegance.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <div class="why-title">20 Years at IIJS</div>
+        <div class="why-desc">Showcasing our products at IIJS — India's largest jewellery show — for the last 20 years. A testament to our standing in the industry.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">05</div>
+        <div class="why-title">Trusted Across the Globe</div>
+        <div class="why-desc">Trusted by retailers, wholesalers, and exporters across India and international markets for quality, reliability, and consistent supply.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">06</div>
+        <div class="why-title">Export Compliant</div>
+        <div class="why-desc">Full GSTIN, IEC code, and export documentation. Seamless international shipping with insurance support on every order.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery" style="background:var(--off-white);padding:80px 8%">
+  <div class="gallery-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Our Work</div>
+      <h2 class="section-title">Gallery</h2>
+    </div>
+    <div class="gallery-filters reveal d1" id="gallery-filters"></div>
+    <div class="gallery-grid reveal d2" id="gallery-grid"></div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div id="testimonials" style="background:var(--white);padding:80px 8%">
+  <div class="testi-inner">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+      <div class="section-eyebrow" style="justify-content:center">Client Voices</div>
+      <h2 class="section-title">Trusted Across the Globe</h2>
+    </div>
+    <div class="testi-wrap reveal d1">
+      <div class="testi-track" id="testi-track">
+        <div class="testimonial">
+          <p class="testi-quote">K.C. Craft has been our manufacturing partner for many years. The ultra-lightweight pieces they produce are exceptional — our customers love the quality and the price point is very competitive. Their delivery is always on time and the consistency across batches is remarkable.</p>
+          <div class="testi-author">
+            <div class="author-av">AO</div>
+            <div>
+              <div class="author-name">Ajit Omer</div>
+              <div class="author-role">Mukesh Chandra and Sons — Kanpur</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testi-quote">We have been sourcing from K.C. Craft for years and their hallmarking standards and export documentation process are excellent. The lightweight jewellery range they offer is unmatched in the market — beautifully finished and very well priced for the B2B segment.</p>
+          <div class="testi-author">
+            <div class="author-av">BS</div>
+            <div>
+              <div class="author-name">Bharat Shah</div>
+              <div class="author-role">Mahalaxmi Jewellers — Mumbai</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testi-quote">Sanjeev bhai's engineering background really shows in the chain quality. The finish, the weight, the strength — every parameter is better than the competition. We have been associated with K.C. Craft for over a decade and would not go elsewhere.</p>
+          <div class="testi-author">
+            <div class="author-av">SG</div>
+            <div>
+              <div class="author-name">Shrikant Gattani</div>
+              <div class="author-role">Shree Balaji Chains — Mumbai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-nav" id="testi-dots"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" style="background:var(--charcoal);padding:80px 8%">
+  <div class="contact-inner">
+    <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto 0">
+      <div class="section-eyebrow" style="justify-content:center">Get in Touch</div>
+      <h2 class="section-title">Contact Us</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);font-weight:300;margin-bottom:14px">We'd Love to Hear from You</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.44);line-height:1.85;font-weight:300;margin-bottom:28px">Fill out the form and our team will get back to you within 24 hours. All enquiries are recorded securely for prompt follow-up.</p>
+        <div class="ci-item">
+          <div class="ci-icon">✉</div>
+          <div><div class="ci-lbl">Email</div><div class="ci-val">preci4@rediffmail.com</div></div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">☎</div>
+          <div><div class="ci-lbl">Phone / WhatsApp</div><div class="ci-val">+91 9096980670<br>+91 9370908987</div></div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">⌖</div>
+          <div><div class="ci-lbl">Address</div><div class="ci-val">101, Manish Ind. Est. 3,<br>Navghar, Mumbai 401 210</div></div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">🌐</div>
+          <div><div class="ci-lbl">Website</div><div class="ci-val"><a href="http://www.kccraft.in" target="_blank" style="color:var(--gold);text-decoration:none">www.kccraft.in</a></div></div>
+        </div>
+        <button class="wa-btn" onclick="openWA()">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </button>
+      </div>
+      <form class="reveal d1" id="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Your Name *</label>
+            <input class="form-input" type="text" id="f-name" required placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contact Number *</label>
+            <input class="form-input" type="tel" id="f-phone" required placeholder="+91 or international">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input class="form-input" type="email" id="f-email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Company Name</label>
+          <input class="form-input" type="text" id="f-company" placeholder="Your business name (if applicable)">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Requirement / Message *</label>
+          <textarea class="form-textarea" id="f-message" required placeholder="Tell us about your jewellery requirements — product type, quantity, design preferences..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">Send Message →</button>
+        <p class="form-note">✓ Your enquiry is saved automatically with date and timestamp for prompt follow-up.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- VISIT / MAP -->
+<div id="visit" style="background:var(--white);padding:80px 8%">
+  <div class="visit-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Find Us</div>
+      <h2 class="section-title">Visit Us</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="reveal">
+        <div class="map-box">
+          <div class="map-grid-bg"></div>
+          <div class="map-content">
+            <div style="font-size:36px;margin-bottom:10px">📍</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--charcoal);font-weight:300">K.C. Craft</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:8px;line-height:1.7">101, Manish Ind. Est. 3,<br>Navghar, Mumbai 401 210</div>
+            <button class="btn-gold" style="margin-top:18px;font-size:10px;padding:11px 22px" onclick="window.open('https://www.google.com/maps/search/101+Manish+Industrial+Estate+Navghar+Mumbai','_blank')">Open in Google Maps ↗</button>
+          </div>
+        </div>
+      </div>
+      <div class="reveal d1">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--charcoal);font-weight:300;margin-bottom:24px">Get in Touch</h3>
+        <div class="ct-item">
+          <div class="ct-icon">✉</div>
+          <div><div class="ct-lbl">Email</div><div class="ct-val">preci4@rediffmail.com</div></div>
+        </div>
+        <div class="ct-item">
+          <div class="ct-icon">☎</div>
+          <div><div class="ct-lbl">Phone</div><div class="ct-val">+91 9096980670 / 9370908987</div></div>
+        </div>
+        <div class="ct-item">
+          <div class="ct-icon">⏱</div>
+          <div><div class="ct-lbl">Working Hours</div><div class="ct-val">Mon–Sat: 10:00 AM – 7:00 PM IST</div></div>
+        </div>
+        <div class="ct-item">
+          <div class="ct-icon">🌐</div>
+          <div><div class="ct-lbl">Website</div><div class="ct-val"><a href="http://www.kccraft.in" target="_blank" style="color:var(--gold);text-decoration:none">www.kccraft.in</a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">K.C.<span> CRAFT</span></div>
+      <div class="footer-tagline">Fine Jewellery Chains · Est. 2006</div>
+      <p class="footer-desc">India's premier jewellery manufacturer specializing in ultra-lightweight jewellery. Precision-engineered gold and silver pieces for the global market. GJC Life Member · Platinium Member.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigate</h5>
+      <a onclick="goTo('about')">About Us</a>
+      <a onclick="goTo('products')">Products</a>
+      <a onclick="goTo('gallery')">Gallery</a>
+      <a onclick="goTo('testimonials')">Clients</a>
+      <a onclick="goTo('contact')">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h5>Products</h5>
+      <a>Necklaces</a>
+      <a>Kadas & Bracelets</a>
+      <a>Chains</a>
+      <a>Rings</a>
+      <a>Bangles, Tops & Bali</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a>preci4@rediffmail.com</a>
+      <a>+91 9096980670</a>
+      <a>+91 9370908987</a>
+      <a>Mumbai, India</a>
+      <a style="margin-top:16px;opacity:.3" onclick="openAdminLogin()">Admin Panel</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 K.C. Craft Fine Jewellery Chains. All rights reserved.</p>
+    <p>GJC Life Member · Platinium Member · BIS Hallmark · Export Licensed</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLB()">
+  <div class="lb-inner" onclick="event.stopPropagation()">
+    <button class="lb-close" onclick="closeLB()">✕</button>
+    <button class="lb-nav lb-prev" onclick="lbNav(-1)">‹</button>
+    <button class="lb-nav lb-next" onclick="lbNav(1)">›</button>
+    <div id="lb-img" class="lb-img"></div>
+    <div id="lb-cap" class="lb-caption"></div>
+  </div>
+</div>
+
+<!-- ADMIN LOGIN -->
+<div id="admin-login">
+  <div class="login-box">
+    <h2>Admin Access</h2>
+    <p>K.C. Craft — Restricted</p>
+    <input class="login-input" type="text" id="lu" placeholder="Username" autocomplete="off">
+    <input class="login-input" type="password" id="lp" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()">
+    <div class="login-err" id="lerr">Incorrect. Try admin / admin123</div>
+    <button class="btn-gold" style="width:100%;padding:13px;margin-top:4px" onclick="doLogin()">Login to Dashboard</button>
+    <div class="login-hint">Demo: admin / admin123</div>
+    <button style="background:none;border:none;color:rgba(255,255,255,.28);font-size:11px;margin-top:14px;cursor:pointer" onclick="closeLogin()">← Back to Site</button>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="admin-panel">
+  <div class="admin-sidebar">
+    <div class="admin-logo-wrap">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--gold);letter-spacing:2px;font-weight:600">K.C.<span style="color:white"> CRAFT</span></div>
+      <p>Admin Dashboard</p>
+    </div>
+    <nav class="admin-nav">
+      <a class="active" onclick="showSec('dash',this)"><span>⬡</span> Dashboard</a>
+      <a onclick="showSec('photos',this)"><span>🖼</span> Photo Library</a>
+      <a onclick="showSec('cols',this)"><span>◈</span> Collections</a>
+      <a onclick="showSec('enqs',this)"><span>✉</span> Enquiries</a>
+      <a onclick="showSec('stats',this)"><span>📊</span> Analytics</a>
+    </nav>
+    <button class="admin-exit" onclick="closeAdmin()">← Exit to Site</button>
+  </div>
+  <div class="admin-main">
+    <div class="admin-top">
+      <div class="admin-page-title" id="apt">Dashboard</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.25)">K.C. Craft Admin</div>
+    </div>
+
+    <div class="admin-sec active" id="admin-dash">
+      <div class="admin-cards">
+        <div class="admin-card"><div class="admin-card-num" id="s-total">0</div><div class="admin-card-lbl">Total Enquiries</div></div>
+        <div class="admin-card"><div class="admin-card-num" id="s-new">0</div><div class="admin-card-lbl">New Enquiries</div></div>
+        <div class="admin-card"><div class="admin-card-num" id="s-photos">0</div><div class="admin-card-lbl">Gallery Photos</div></div>
+        <div class="admin-card"><div class="admin-card-num" id="s-today">0</div><div class="admin-card-lbl">Today's Enquiries</div></div>
+      </div>
+      <div class="admin-box"><div class="admin-box-title">Recent Enquiries</div><table class="atbl" id="dash-tbl"></table></div>
+    </div>
+
+    <div class="admin-sec" id="admin-photos">
+      <div class="upload-zone" onclick="document.getElementById('au').click()">
+        <strong>📤 Upload Product Photos</strong>
+        <p>JPG, PNG, WEBP — select multiple at once<br><small style="color:rgba(201,168,76,.4);font-size:10px">Photos will appear in gallery and can be assigned to product categories</small></p>
+      </div>
+      <input type="file" id="au" multiple accept="image/*" style="display:none" onchange="doUpload(this)">
+      <select class="aselect" id="pcat" style="max-width:200px;margin-bottom:14px" onchange="renderPhotos()">
+        <option value="all">All Categories</option>
+        <option value="necklaces">Necklaces</option>
+        <option value="kadas">Kadas</option>
+        <option value="bracelets">Bracelets</option>
+        <option value="chains">Chains</option>
+        <option value="rings">Rings</option>
+        <option value="bangles">Bangles</option>
+        <option value="tops">Tops</option>
+        <option value="bali">Bali</option>
+      </select>
+      <div class="photo-grid" id="photo-grid"></div>
+    </div>
+
+    <div class="admin-sec" id="admin-cols">
+      <div style="display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap">
+        <input class="ainput" type="text" id="cn" placeholder="Collection name" style="max-width:200px;margin-bottom:0">
+        <input class="ainput" type="text" id="cd" placeholder="Description" style="flex:1;min-width:160px;margin-bottom:0">
+        <button class="abtn" onclick="addCol()">+ Add</button>
+      </div>
+      <table class="atbl">
+        <thead><tr><th>Collection</th><th>Description</th><th>Status</th><th>Actions</th></tr></thead>
+        <tbody id="col-tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="admin-sec" id="admin-enqs">
+      <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
+        <select class="aselect" style="max-width:150px;margin-bottom:0" onchange="filterEnqs(this.value)">
+          <option value="all">All</option><option value="new">New</option><option value="read">Read</option>
+        </select>
+        <input class="ainput" type="text" placeholder="Search name, company..." style="flex:1;margin-bottom:0;min-width:180px" oninput="searchEnqs(this.value)">
+        <button class="abtn" onclick="exportCSV()">Export CSV</button>
+      </div>
+      <table class="atbl">
+        <thead><tr><th>Name</th><th>Phone</th><th>Company</th><th>Message</th><th>Date & Time</th><th>Status</th><th></th></tr></thead>
+        <tbody id="enq-tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="admin-sec" id="admin-stats">
+      <div class="admin-cards">
+        <div class="admin-card"><div class="admin-card-num" id="st-total">0</div><div class="admin-card-lbl">Total Enquiries</div></div>
+        <div class="admin-card"><div class="admin-card-num" id="st-week">0</div><div class="admin-card-lbl">This Week</div></div>
+        <div class="admin-card"><div class="admin-card-num" id="st-month">0</div><div class="admin-card-lbl">This Month</div></div>
+        <div class="admin-card"><div class="admin-card-num" id="st-photos">0</div><div class="admin-card-lbl">Gallery Photos</div></div>
+      </div>
+      <div class="admin-box">
+        <div class="admin-box-title">Enquiries — Last 6 Months</div>
+        <div class="chart-bars" id="chart-bars"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// ─── DATA ───────────────────────────────────────────
+const GALLERY_DATA = [
+  {id:1,cat:'necklaces',label:'Necklace – Style A',g:'linear-gradient(135deg,#2A1F08,#C9A84C 55%,#E8D5A0)'},
+  {id:2,cat:'chains',label:'Gold Chain – Figaro',g:'linear-gradient(135deg,#3D2A05,#8B6914 40%,#C9A84C)'},
+  {id:3,cat:'bangles',label:'Gold Bangle Set',g:'linear-gradient(135deg,#4a2a02,#C9A84C 55%,#fff8e7)'},
+  {id:4,cat:'kadas',label:'Designer Kada',g:'linear-gradient(135deg,#2A1F08,#8B6914 40%,#E8D5A0 80%)'},
+  {id:5,cat:'bracelets',label:'Silver Bracelet',g:'linear-gradient(135deg,#1a1a1a,#888 50%,#eee)'},
+  {id:6,cat:'rings',label:"Gents Ring",g:'linear-gradient(135deg,#1a1a1a,#555 50%,#ccc)'},
+  {id:7,cat:'tops',label:'Gold Tops',g:'linear-gradient(135deg,#3D2A05,#C9A84C 60%,#E8D5A0)'},
+  {id:8,cat:'bali',label:'Classic Bali',g:'linear-gradient(135deg,#2A1F08,#8B6914 50%,#C9A84C)'},
+  {id:9,cat:'necklaces',label:'Necklace – Style B',g:'linear-gradient(135deg,#4a2a02,#8B6914 40%,#E8D5A0)'},
+  {id:10,cat:'chains',label:'Silver Chain',g:'linear-gradient(135deg,#1a1a1a,#777 50%,#eee)'},
+  {id:11,cat:'rings',label:'Ladies Ring',g:'linear-gradient(135deg,#3D2A05,#C9A84C 55%,#fff8e7)'},
+  {id:12,cat:'bangles',label:'Silver Bangle',g:'linear-gradient(135deg,#1a1a1a,#888 50%,#eee)'},
+];
+
+const GALLERY_FILTERS = [
+  {k:'all',l:'All'},
+  {k:'necklaces',l:'Necklaces'},
+  {k:'kadas',l:'Kadas'},
+  {k:'bracelets',l:'Bracelets'},
+  {k:'chains',l:'Chains'},
+  {k:'rings',l:'Rings'},
+  {k:'bangles',l:'Bangles'},
+  {k:'tops',l:'Tops'},
+  {k:'bali',l:'Bali'},
+];
+
+let enquiries  = JSON.parse(localStorage.getItem('kc_enqs') || '[]');
+let userPhotos = JSON.parse(localStorage.getItem('kc_photos') || '[]');
+let collections= JSON.parse(localStorage.getItem('kc_cols') || JSON.stringify([
+  {id:1,name:'Gold Chains',desc:'Figaro, Franco, Rope, Box, Singapore',active:true},
+  {id:2,name:'Silver Chains',desc:'925 sterling silver chains',active:true},
+  {id:3,name:'Lightweight Collection',desc:'Ultra-lightweight everyday jewellery',active:true},
+  {id:4,name:"Men's Collection",desc:'Kadas, rings, chains for gents',active:true},
+]));
+let filteredEnqs = [];
+let lbIdx = 0, lbCat = 'all', testiIdx = 0;
+
+// ─── NAVIGATION ──────────────────────────────────────
+function goTo(id){
+  const el = document.getElementById(id);
+  if(el) el.scrollIntoView({behavior:'smooth'});
+  document.getElementById('mobile-menu').classList.remove('open');
+}
+function toggleMenu(){document.getElementById('mobile-menu').classList.toggle('open')}
+
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
+  checkReveal();
+});
+
+// ─── REVEAL ANIMATIONS ───────────────────────────────
+function checkReveal(){
+  document.querySelectorAll('.reveal').forEach(el => {
+    if(el.getBoundingClientRect().top < window.innerHeight - 60) el.classList.add('visible');
+  });
+}
+setTimeout(checkReveal, 120);
+
+// ─── PARTICLES ───────────────────────────────────────
+(function(){
+  const c = document.getElementById('particles');
+  for(let i=0; i<24; i++){
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;width:${1+Math.random()*1.5}px;height:${1+Math.random()*1.5}px;animation-delay:${Math.random()*12}s;animation-duration:${9+Math.random()*10}s`;
+    c.appendChild(p);
+  }
+})();
+
+// ─── GALLERY ─────────────────────────────────────────
+function buildGallery(){
+  document.getElementById('gallery-filters').innerHTML = GALLERY_FILTERS.map(f =>
+    `<button class="filter-btn${f.k==='all'?' active':''}" onclick="filterGallery('${f.k}',this)">${f.l}</button>`
+  ).join('');
+  renderGallery('all');
+}
+function filterGallery(cat, btn){
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  lbCat = cat;
+  renderGallery(cat);
+}
+function renderGallery(cat){
+  const allItems = [...GALLERY_DATA, ...userPhotos.map((p,i) => ({id:9000+i,cat:p.cat||'chains',label:p.label,g:p.g||'var(--gold)',isUser:true,dataUrl:p.dataUrl}))];
+  const items = cat==='all' ? allItems : allItems.filter(i => i.cat===cat);
+  document.getElementById('gallery-grid').innerHTML = items.map(it =>
+    `<div class="gallery-item" onclick="openLB(${it.id})">
+      <div class="img-placeholder" style="height:100%;${it.dataUrl?'':'background:'+it.g}">
+        ${it.dataUrl ? `<img src="${it.dataUrl}" style="width:100%;height:100%;object-fit:cover">` : `<div class="img-num" style="font-size:20px;opacity:.3">◈</div>`}
+      </div>
+      <div class="gallery-overlay">🔍</div>
+    </div>`
+  ).join('');
+}
+
+// ─── LIGHTBOX ────────────────────────────────────────
+function openLB(id){
+  const allItems = [...GALLERY_DATA, ...userPhotos.map((p,i) => ({id:9000+i,cat:p.cat||'chains',label:p.label,g:p.g||'var(--gold)',dataUrl:p.dataUrl}))];
+  const items = lbCat==='all' ? allItems : allItems.filter(i => i.cat===lbCat);
+  lbIdx = items.findIndex(i => i.id===id);
+  if(lbIdx < 0) lbIdx = 0;
+  renderLB(items);
+  document.getElementById('lightbox').classList.add('open');
+}
+function renderLB(items){
+  const it = items[lbIdx] || items[0];
+  document.getElementById('lb-img').innerHTML = it.dataUrl
+    ? `<img src="${it.dataUrl}" style="max-width:80vw;max-height:70vh;object-fit:contain">`
+    : `<div style="width:380px;height:380px;background:${it.g};display:flex;align-items:center;justify-content:center"><div style="width:50%;height:50%;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.28),transparent);border-radius:50%"></div></div>`;
+  document.getElementById('lb-cap').textContent = it.label;
+}
+function lbNav(dir){
+  const allItems = [...GALLERY_DATA, ...userPhotos.map((p,i) => ({id:9000+i,cat:p.cat||'chains',label:p.label,g:p.g||'var(--gold)',dataUrl:p.dataUrl}))];
+  const items = lbCat==='all' ? allItems : allItems.filter(i => i.cat===lbCat);
+  lbIdx = (lbIdx + dir + items.length) % items.length;
+  renderLB(items);
+}
+function closeLB(){document.getElementById('lightbox').classList.remove('open')}
+document.addEventListener('keydown', e => {
+  if(e.key==='Escape') closeLB();
+  if(e.key==='ArrowRight') lbNav(1);
+  if(e.key==='ArrowLeft') lbNav(-1);
+});
+
+// ─── TESTIMONIALS ─────────────────────────────────────
+function buildTesti(){
+  const count = document.getElementById('testi-track').children.length;
+  const nav = document.getElementById('testi-dots');
+  nav.innerHTML = '';
+  for(let i=0; i<count; i++){
+    const d = document.createElement('button');
+    d.className = 'testi-dot' + (i===0?' active':'');
+    d.onclick = () => goTesti(i);
+    nav.appendChild(d);
+  }
+}
+function goTesti(i){
+  testiIdx = i;
+  document.getElementById('testi-track').style.transform = `translateX(-${i*100}%)`;
+  document.querySelectorAll('.testi-dot').forEach((d,j) => d.className = 'testi-dot'+(j===i?' active':''));
+}
+// Slow carousel — 12 seconds per slide
+setInterval(() => goTesti((testiIdx+1) % 3), 12000);
+
+// ─── CONTACT FORM ─────────────────────────────────────
+function submitForm(e){
+  e.preventDefault();
+  const now = new Date();
+  const enq = {
+    id: Date.now(),
+    name:    document.getElementById('f-name').value.trim(),
+    phone:   document.getElementById('f-phone').value.trim(),
+    email:   document.getElementById('f-email').value.trim(),
+    company: document.getElementById('f-company').value.trim(),
+    message: document.getElementById('f-message').value.trim(),
+    date:    now.toLocaleDateString('en-IN'),
+    time:    now.toLocaleTimeString('en-IN', {hour:'2-digit',minute:'2-digit'}),
+    datetime: now.toISOString(),
+    status:  'new'
+  };
+  enquiries.unshift(enq);
+  localStorage.setItem('kc_enqs', JSON.stringify(enquiries));
+
+  // ── GOOGLE SHEETS INTEGRATION ──────────────────────────────────────────────
+  // HOW TO SET UP (one-time, 5 minutes):
+  //   1. Go to https://sheets.google.com and create a new sheet called "KC Craft Enquiries"
+  //   2. Add these headers in Row 1: Name | Phone | Email | Company | Message | Date | Time
+  //   3. Go to Extensions → Apps Script, paste the script from: https://gist.github.com (search "Google Sheets contact form Apps Script")
+  //      Or use this minimal script:
+  //      function doPost(e){
+  //        var data = JSON.parse(e.postData.contents);
+  //        var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  //        sheet.appendRow([data.name, data.phone, data.email||'', data.company||'', data.message, data.date, data.time]);
+  //        return ContentService.createTextOutput('OK');
+  //      }
+  //   4. Deploy → New deployment → Web App → Execute as Me → Anyone → Deploy
+  //   5. Copy the Web App URL and paste it below replacing 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'
+  // ──────────────────────────────────────────────────────────────────────────
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwRNR250IU1nO4WPws_CpFYBSeM-FmytNhSqLxnUX1HzNDn-vtrp44T_b9PhEj-v2Se/exec';
+  if(SCRIPT_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'){
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(enq)
+    }).catch(() => {});
+  }
+
+  const btn = document.getElementById('submit-btn');
+  btn.textContent = '✓ Message Sent!';
+  btn.style.background = '#2a7a2a';
+  showToast('✓ Message sent! We will contact you within 24 hours.');
+  e.target.reset();
+  setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; }, 3500);
+}
+function openWA(){ window.open('https://wa.me/919096980670?text=Hello%20K.C.%20Craft%2C%20I%20am%20interested%20in%20your%20jewellery.','_blank') }
+
+// ─── TOAST ────────────────────────────────────────────
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 4000);
+}
+
+// ─── ADMIN AUTH ───────────────────────────────────────
+function openAdminLogin(){ document.getElementById('admin-login').style.display='flex'; setTimeout(()=>document.getElementById('admin-login').classList.add('open'),10) }
+function closeLogin(){ document.getElementById('admin-login').classList.remove('open') }
+function doLogin(){
+  if(document.getElementById('lu').value==='admin' && document.getElementById('lp').value==='admin123'){
+    closeLogin();
+    document.getElementById('admin-panel').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    renderAdmin();
+  } else {
+    document.getElementById('lerr').style.display = 'block';
+  }
+}
+function closeAdmin(){ document.getElementById('admin-panel').classList.remove('open'); document.body.style.overflow = '' }
+
+// ─── ADMIN SECTIONS ───────────────────────────────────
+const SEC_TITLES = {dash:'Dashboard',photos:'Photo Library',cols:'Collections',enqs:'Enquiries',stats:'Analytics'};
+function showSec(id, el){
+  document.querySelectorAll('.admin-sec').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.admin-nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('admin-'+id).classList.add('active');
+  if(el) el.classList.add('active');
+  document.getElementById('apt').textContent = SEC_TITLES[id] || id;
+}
+function renderAdmin(){ renderDash(); renderPhotos(); renderCols(); renderEnqs(); renderStats() }
+
+// ─── DASHBOARD ────────────────────────────────────────
+function renderDash(){
+  const today = new Date().toLocaleDateString('en-IN');
+  const todayCount = enquiries.filter(e => e.date === today).length;
+  document.getElementById('s-total').textContent  = enquiries.length;
+  document.getElementById('s-new').textContent    = enquiries.filter(e => e.status==='new').length;
+  document.getElementById('s-photos').textContent = userPhotos.length;
+  document.getElementById('s-today').textContent  = todayCount;
+  const rows = enquiries.slice(0,6);
+  document.getElementById('dash-tbl').innerHTML =
+    '<thead><tr><th>Name</th><th>Phone</th><th>Company</th><th>Date</th><th>Time</th><th>Status</th></tr></thead><tbody>' +
+    (rows.length
+      ? rows.map(e => `<tr><td>${e.name}</td><td>${e.phone}</td><td>${e.company||'—'}</td><td>${e.date}</td><td>${e.time}</td><td><span class="badge badge-${e.status}">${e.status}</span></td></tr>`).join('')
+      : '<tr><td colspan="6" style="text-align:center;color:rgba(255,255,255,.2);padding:28px">No enquiries yet. Try submitting the contact form!</td></tr>'
+    ) + '</tbody>';
+}
+
+// ─── PHOTOS ───────────────────────────────────────────
+function renderPhotos(){
+  const cat = document.getElementById('pcat')?.value || 'all';
+  const filtered = cat==='all' ? userPhotos : userPhotos.filter(p => p.cat===cat);
+  document.getElementById('photo-grid').innerHTML = filtered.length
+    ? filtered.map((p,i) =>
+        `<div class="photo-thumb">
+          ${p.dataUrl ? `<img src="${p.dataUrl}" style="width:100%;height:100%;object-fit:cover">` : `<div style="width:100%;height:100%;background:${p.g}"></div>`}
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:4px 6px;background:rgba(0,0,0,.6);font-size:9px;color:rgba(255,255,255,.5)">${p.label}</div>
+          <div class="photo-thumb-actions">
+            <button class="abtn" style="font-size:9px;padding:4px 8px" onclick="showToast('Edit in production build')">Edit</button>
+            <button class="abtn abtn-danger" style="font-size:9px;padding:4px 8px" onclick="deletePhoto(${i})">Del</button>
+          </div>
+        </div>`
+      ).join('')
+    : '<div style="color:rgba(255,255,255,.25);font-size:13px;padding:32px">No photos uploaded yet. Use the upload zone above to add your product photos.</div>';
+}
+function doUpload(input){
+  Array.from(input.files).forEach(f => {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      userPhotos.push({cat:'chains', label:f.name.replace(/\.[^.]+$/,''), g:'linear-gradient(135deg,#2A1F08,#C9A84C)', dataUrl:ev.target.result});
+      localStorage.setItem('kc_photos', JSON.stringify(userPhotos));
+      renderPhotos();
+      document.getElementById('s-photos').textContent = userPhotos.length;
+      showToast('✓ ' + f.name + ' uploaded');
+    };
+    reader.readAsDataURL(f);
+  });
+  input.value = '';
+}
+function deletePhoto(i){
+  if(!confirm('Delete this photo?')) return;
+  userPhotos.splice(i,1);
+  localStorage.setItem('kc_photos', JSON.stringify(userPhotos));
+  renderPhotos();
+  showToast('Photo deleted');
+}
+
+// ─── COLLECTIONS ──────────────────────────────────────
+function renderCols(){
+  document.getElementById('col-tbody').innerHTML = collections.map(c =>
+    `<tr>
+      <td>${c.name}</td><td>${c.desc}</td>
+      <td><span class="badge ${c.active?'badge-new':'badge-read'}">${c.active?'Active':'Hidden'}</span></td>
+      <td style="display:flex;gap:6px">
+        <button class="abtn" style="font-size:9px;padding:4px 10px" onclick="toggleCol(${c.id})">Toggle</button>
+        <button class="abtn abtn-danger" style="font-size:9px;padding:4px 10px" onclick="delCol(${c.id})">Delete</button>
+      </td>
+    </tr>`
+  ).join('');
+}
+function addCol(){
+  const n = document.getElementById('cn').value.trim();
+  if(!n){ showToast('Enter a collection name'); return }
+  collections.push({id:Date.now(), name:n, desc:document.getElementById('cd').value, active:true});
+  localStorage.setItem('kc_cols', JSON.stringify(collections));
+  document.getElementById('cn').value = ''; document.getElementById('cd').value = '';
+  renderCols(); showToast('Collection "'+n+'" added');
+}
+function toggleCol(id){ const c=collections.find(x=>x.id===id); if(c){c.active=!c.active; localStorage.setItem('kc_cols',JSON.stringify(collections)); renderCols()} }
+function delCol(id){ if(!confirm('Delete?'))return; collections=collections.filter(c=>c.id!==id); localStorage.setItem('kc_cols',JSON.stringify(collections)); renderCols() }
+
+// ─── ENQUIRIES ────────────────────────────────────────
+function renderEnqs(){ filteredEnqs = [...enquiries]; buildEnqTable() }
+function filterEnqs(s){ filteredEnqs = s==='all' ? [...enquiries] : enquiries.filter(e=>e.status===s); buildEnqTable() }
+function searchEnqs(q){ const lq=q.toLowerCase(); filteredEnqs=enquiries.filter(e=>e.name.toLowerCase().includes(lq)||e.company.toLowerCase().includes(lq)||e.phone.includes(lq)); buildEnqTable() }
+function buildEnqTable(){
+  document.getElementById('enq-tbody').innerHTML = filteredEnqs.length
+    ? filteredEnqs.map(e =>
+        `<tr>
+          <td>${e.name}</td>
+          <td>${e.phone}</td>
+          <td>${e.company||'—'}</td>
+          <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px">${e.message}</td>
+          <td style="white-space:nowrap">${e.date} ${e.time}</td>
+          <td><span class="badge badge-${e.status}">${e.status}</span></td>
+          <td><button class="abtn" style="font-size:9px;padding:4px 9px" onclick="markRead(${e.id})">Mark Read</button></td>
+        </tr>`
+      ).join('')
+    : '<tr><td colspan="7" style="text-align:center;color:rgba(255,255,255,.2);padding:28px">No enquiries found</td></tr>';
+}
+function markRead(id){
+  const e = enquiries.find(x => x.id==id);
+  if(e && e.status==='new'){ e.status='read'; localStorage.setItem('kc_enqs',JSON.stringify(enquiries)); renderEnqs(); renderDash(); showToast('Marked as read') }
+}
+
+// Export to CSV
+function exportCSV(){
+  if(!enquiries.length){ showToast('No enquiries to export'); return }
+  const header = ['Name','Phone','Email','Company','Message','Date','Time'];
+  const rows = enquiries.map(e => [e.name,e.phone,e.email||'',e.company||'',e.message.replace(/,/g,' '),e.date,e.time]);
+  const csv = [header,...rows].map(r => r.map(v => '"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\n');
+  const a = document.createElement('a');
+  a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+  a.download = 'kc-craft-enquiries-' + new Date().toISOString().slice(0,10) + '.csv';
+  a.click();
+  showToast('CSV exported!');
+}
+
+// ─── ANALYTICS ────────────────────────────────────────
+function renderStats(){
+  document.getElementById('st-total').textContent = enquiries.length;
+  const now = new Date();
+  const weekAgo = new Date(now - 7*24*60*60*1000);
+  const monthAgo = new Date(now - 30*24*60*60*1000);
+  document.getElementById('st-week').textContent  = enquiries.filter(e => new Date(e.datetime) > weekAgo).length;
+  document.getElementById('st-month').textContent = enquiries.filter(e => new Date(e.datetime) > monthAgo).length;
+  document.getElementById('st-photos').textContent = userPhotos.length;
+  // Build monthly chart from real data
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const counts = Array(12).fill(0);
+  enquiries.forEach(e => { if(e.datetime){ const m = new Date(e.datetime).getMonth(); counts[m]++ }});
+  const last6 = [];
+  for(let i=5; i>=0; i--){ const idx=(now.getMonth()-i+12)%12; last6.push({m:months[idx],v:counts[idx]}) }
+  const max = Math.max(...last6.map(x=>x.v), 1);
+  document.getElementById('chart-bars').innerHTML = last6.map(b =>
+    `<div class="cbar-wrap"><div class="cbar" style="height:${Math.max(4,Math.round((b.v/max)*100))}%"></div><div class="cbar-lbl">${b.m}</div></div>`
+  ).join('');
+}
+
+// ─── INIT ─────────────────────────────────────────────
+buildGallery();
+buildTesti();
+</script>
+</body>
+</html>
